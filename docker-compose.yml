@@ -1,0 +1,38 @@
+version: '3'
+
+networks:
+  default:
+    external:
+      name: mediawiki
+
+volumes:
+  db_data: ~
+
+services:
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: repo
+
+  repo:
+    build: ./
+    depends_on:
+      - mysql
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - 80
+
+  repo-hhvm:
+    build:
+      context: ./
+      dockerfile: Dockerfile.jenkins
+    depends_on:
+      - mysql
+    volumes:
+      - ./web:/var/www/html
+#    ports:
+#      - 80
