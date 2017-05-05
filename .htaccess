@@ -1,0 +1,6 @@
+ExpiresActive on
+
+<If "%{REQUEST_URI} =~ m#^/extensions/Wikibase#">
+    ExpiresDefault "access plus 2 seconds"
+</If>
+
