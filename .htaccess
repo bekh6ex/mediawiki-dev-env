@@ -1,6 +1,8 @@
 ExpiresActive on
+FileETag All
 
 <If "%{REQUEST_URI} =~ m#^/extensions/Wikibase#">
     ExpiresDefault "access plus 2 seconds"
+    RequestHeader  edit "If-None-Match" "^\"(.*)-gzip\"$" "\"$1\"" # Bugfix. See http://stackoverflow.com/questions/896974/apache-is-not-sending-304-response-if-mod-deflate-and-addoutputfilterbytype-is
 </If>
 
