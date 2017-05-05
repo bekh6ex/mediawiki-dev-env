@@ -32,7 +32,7 @@ RUN apt-get update && apt-get install -y openssh-server \
     && chown www-data:www-data /var/www \
     && chmod a+rw /var/www
 
-RUN a2enmod expires
+RUN a2enmod expires headers
 
 RUN echo "service ssh start & apache2-foreground" > /run.sh
 
