@@ -11,4 +11,9 @@ fi
 
 composer update
 
+set +e
+# May fail if wiki is not installed yet
+php maintenance/update.php --quick
+set -e
+
 apache2-foreground
