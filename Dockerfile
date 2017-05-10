@@ -30,6 +30,11 @@ RUN apt-get update && apt-get install -y openssh-server \
     && chown www-data:www-data /var/www \
     && chmod a+rw /var/www
 
+# for composer
+RUN apt-get update && apt-get install -y unzip
+
+RUN curl https://getcomposer.org/composer.phar > /usr/local/bin/composer && chmod +x /usr/local/bin/composer
+
 RUN a2enmod expires headers
 
 COPY run.sh /run.sh

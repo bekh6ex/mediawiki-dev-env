@@ -6,7 +6,9 @@ service ssh start &
 cd /var/www/html
 
 if [ ! -f composer.local.json ]; then
-    cp composer.local.json-sample composer.local.json
+    echo '{ "extra": { "merge-plugin": { "include": [ "extensions/*/composer.json" ] } } }' > composer.local.json
 fi
+
+composer update
 
 apache2-foreground
