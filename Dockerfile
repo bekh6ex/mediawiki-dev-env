@@ -19,8 +19,6 @@ RUN docker-php-ext-install -j$(nproc) opcache && docker-php-ext-enable opcache
 RUN docker-php-ext-install -j$(nproc) calendar
 RUN docker-php-ext-install -j$(nproc) dba
 
-RUN
-
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug \
     && echo "xdebug.remote_enable=1" >> /usr/local/etc/php/php.ini \
