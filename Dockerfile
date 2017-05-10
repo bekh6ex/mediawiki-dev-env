@@ -32,6 +32,6 @@ RUN apt-get update && apt-get install -y openssh-server \
 
 RUN a2enmod expires headers
 
-RUN echo "service ssh start & apache2-foreground" > /run.sh
+COPY run.sh /run.sh
 
 CMD ["/bin/bash", "/run.sh"]
