@@ -336,7 +336,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings load_method="CUSTOM_LOADER" />
-      <phpunit_by_interpreter interpreter_id="c4a4274d-23d6-429f-ba0d-a90fc848e82f" load_method="CUSTOM_LOADER" configuration_file_path="/var/www/html/tests/phpunit/suite.xml" custom_loader_path="/var/www/html/tests/phpunit/autoload.ide.php" phpunit_phar_path="" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="c4a4274d-23d6-429f-ba0d-a90fc848e82f" load_method="CUSTOM_LOADER" configuration_file_path="/var/www/html/tests/phpunit/suite.xml" custom_loader_path="/var/www/html/tests/phpunit/autoload.ide.php" phpunit_phar_path="" />
     </phpunit_settings>
   </component>
 </project>
