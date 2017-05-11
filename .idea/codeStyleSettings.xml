@@ -5,6 +5,7 @@
       <value>
         <option name="RIGHT_MARGIN" value="140" />
         <JSCodeStyleSettings>
+          <option name="FORCE_SEMICOLON_STYLE" value="true" />
           <option name="USE_DOUBLE_QUOTES" value="false" />
           <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
           <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
@@ -65,6 +66,5 @@
       </value>
     </option>
     <option name="USE_PER_PROJECT_SETTINGS" value="true" />
-    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default (1)" />
   </component>
 </project>
