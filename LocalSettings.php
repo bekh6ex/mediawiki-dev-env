@@ -157,6 +157,7 @@ require __DIR__ . '/extensions/Wikibase/client/WikibaseClient.php';
 $wgEnableJavaScriptTest = true;
 $wgShowExceptionDetails = true;
 $wgParserCacheType = CACHE_NONE;
+$wgRateLimits = [];
 //$wgShowSQLErrors = true;
 //error_reporting( E_ALL );
 //ini_set( 'display_errors', 1 );
