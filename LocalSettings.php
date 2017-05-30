@@ -28,11 +28,11 @@ $wgSitename = "Repo";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://172.18.0.3";
+$wgServer = "//repo";
 
 ## The URL path to static resources (images, scripts, etc.)
 //$wgResourceBasePath = $wgScriptPath;
-$wgResourceBasePath = '//172.18.0.3'; //To avoid '?af0af' tail on JS files. See \OutputPage::transformResourcePath
+$wgResourceBasePath = $wgServer; //To avoid '?af0af' tail on JS files. See \OutputPage::transformResourcePath
 
 ## The URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
