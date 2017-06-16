@@ -13,6 +13,11 @@
         <PHPCodeStyleSettings>
           <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
         </PHPCodeStyleSettings>
+        <codeStyleSettings language="CSS">
+          <indentOptions>
+            <option name="USE_TAB_CHARACTER" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
         <codeStyleSettings language="JavaScript">
           <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
           <option name="SPACE_WITHIN_METHOD_CALL_PARENTHESES" value="true" />
