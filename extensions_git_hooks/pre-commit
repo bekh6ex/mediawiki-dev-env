@@ -63,6 +63,9 @@ do
     if [[ $FILE == *.php ]]; then
         ./vendor/bin/phpcbf -sp --standard="${EXT_DIR}/phpcs.xml" --extensions=php "${EXT_DIR}/${FILE}"
     fi
+    if [[ $FILE == *.js ]]; then
+        ./node_modules/.bin/eslint -c "${EXT_DIR}/.eslintrc.json" --fix "${EXT_DIR}/${FILE}"
+    fi
 done
 cd "${EXT_DIR}"
 
