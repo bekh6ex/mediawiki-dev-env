@@ -35,6 +35,8 @@ RUN apt-get update && apt-get install -y unzip
 
 RUN curl https://getcomposer.org/composer.phar > /usr/local/bin/composer && chmod +x /usr/local/bin/composer
 
+RUN apt-get update && apt-get install -y git
+
 RUN a2enmod expires headers
 
 COPY run.sh /run.sh
