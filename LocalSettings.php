@@ -161,3 +161,5 @@ $wgRateLimits = [];
 //$wgShowSQLErrors = true;
 //error_reporting( E_ALL );
 //ini_set( 'display_errors', 1 );
+
+//$wgDebugLogFile = "php://stderr";
