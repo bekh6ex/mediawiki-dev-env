@@ -158,6 +158,7 @@ $wgEnableJavaScriptTest = true;
 $wgShowExceptionDetails = true;
 $wgParserCacheType = CACHE_NONE;
 $wgRateLimits = [];
+$wgDevelopmentWarnings = true;
 //$wgShowSQLErrors = true;
 //error_reporting( E_ALL );
 //ini_set( 'display_errors', 1 );
