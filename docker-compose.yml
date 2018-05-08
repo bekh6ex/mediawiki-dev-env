@@ -19,6 +19,7 @@ services:
 
   repo:
     build: ./
+    user: $UID
     depends_on:
       - mysql
     volumes:
