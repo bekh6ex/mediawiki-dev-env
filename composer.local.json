@@ -1,0 +1,12 @@
+{
+	"require": {
+		"giorgiosironi/eris": "*"
+	},
+	"extra": {
+		"merge-plugin": {
+			"include": [
+				"extensions/*/composer.json"
+			]
+		}
+	}
+}
