@@ -1,0 +1,12 @@
+{
+    "name": "albe/collect-view-stats",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "Aleksey Bekh-Ivanov",
+            "email": "6ex@mail.ru"
+        }
+    ]
+}
